@@ -1,5 +1,6 @@
 import urllib.request, urllib.error, urllib.parse
 import sys
+import os
 import threading
 import random
 import re
@@ -57,9 +58,10 @@ def buildblock(size):
 	return(out_str)
 
 def usage():
-	print(colorama.Style.BRIGHT + colorama.Fore.RED + str("████████████████████████████████████████████████\n█▄─▄▄▀█─▄▄─█─▄▄▄▄█▄─▄─▀█▄─█─▄█▄─▄▄─█▄─▄▄▀██▀▄─██\n██─██─█─██─█▄▄▄▄─██─▄─▀██▄─▄███─▄█▀██─▄─▄██─▀─██\n▀▄▄▄▄▀▀▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▀▀▀▄▄▄▀▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▀▄▄▀"))
-
-	print(f'\n\n{colorama.Style.BRIGHT}{colorama.Fore.YELLOW}İstifadə Qaydası:{colorama.Fore.BLUE} python3 DOSbyEra.py {colorama.Fore.CYAN}https://link.com' + colorama.Style.RESET_ALL)
+	os.system('cls')
+	print(colorama.Style.BRIGHT + colorama.Fore.RED + str("\t\t@@@@@@@    @@@@@@    @@@@@@   @@@@@@@   @@@ @@@  @@@@@@@@  @@@@@@@    @@@@@@   \n\t\t@@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@@  @@@ @@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  \n\t\t@@!  @@@  @@!  @@@  !@@       @@!  @@@  @@! !@@  @@!       @@!  @@@  @@!  @@@  \n\t\t!@!  @!@  !@!  @!@  !@!       !@   @!@  !@! @!!  !@!       !@!  @!@  !@!  @!@  \n\t\t@!@  !@!  @!@  !@!  !!@@!!    @!@!@!@    !@!@!   @!!!:!    @!@!!@!   @!@!@!@!  \n\t\t!@!  !!!  !@!  !!!   !!@!!!   !!!@!!!!    @!!!   !!!!!:    !!@!@!    !!!@!!!!  \n\t\t!!:  !!!  !!:  !!!       !:!  !!:  !!!    !!:    !!:       !!: :!!   !!:  !!!  \n\t\t:!:  !:!  :!:  !:!      !:!   :!:  !:!    :!:    :!:       :!:  !:!  :!:  !:!  \n\t\t :::: ::  ::::: ::  :::: ::    :: ::::     ::     :: ::::  ::   :::  ::   :::  \n\t\t:: :  :    : :  :   :: : :    :: : ::      :     : :: ::    :   : :   :   : :  "))
+	print(f'{colorama.Style.RESET_ALL}{colorama.Fore.MAGENTA}\t\t\t\t\t\t\t\t      𝕯𝖊𝖛𝖊𝖑𝖔𝖕𝖒𝖊𝖓𝖙 𝖇𝖞 𝕰𝖗𝖆𝖙𝖔𝖓𝖔𝖘')
+	print(f'\n\n\n\n{colorama.Style.BRIGHT}{colorama.Fore.YELLOW}İstifadə Qaydası:{colorama.Fore.BLUE} python3 DOSbyEra.py {colorama.Fore.CYAN}https://link.com' + colorama.Style.RESET_ALL)
 
 def httpcall(url):
 	useragent_list()
